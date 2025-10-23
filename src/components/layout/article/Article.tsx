@@ -3,7 +3,6 @@ import React from "react";
 type ArticleProps = {
   title: string;
   description?: string;
-  author?: string;
   date?: string;
   children: React.ReactNode;
 };
@@ -11,7 +10,6 @@ type ArticleProps = {
 export const Article = ({
   title,
   description,
-  author = "Andrei Lopatin",
   date,
   children,
 }: ArticleProps) => {
@@ -26,7 +24,6 @@ export const Article = ({
         )}
 
         <div className="text-sm text-gray-500 flex items-center gap-2">
-          <span>By {author}</span>
           {date && (
             <>
               <span>•</span>

@@ -1,3 +1,5 @@
+import { Article } from "@/components/layout/article/Article";
+
 export default function Lesson1() {
   return (
     <Article
