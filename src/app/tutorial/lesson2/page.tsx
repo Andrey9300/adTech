@@ -1,10 +1,20 @@
 export default function Lesson1() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        lesson 222
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center"></footer>
-    </div>
+    <Article
+      title="Understanding State Management in React"
+      description="A complete guide to managing local and global state effectively."
+    >
+      <h1>Garlic bread with cheese: What the science tells us</h1>
+      <p>
+        For years parents have espoused the health benefits of eating garlic
+        bread with cheese to their children, with the food earning such an
+        iconic status in our culture that kids will often dress up as warm,
+        cheesy loaf for Halloween.
+      </p>
+      <p>
+        But a recent study shows that the celebrated appetizer may be linked to
+        a series of rabies cases springing up around the country.
+      </p>
+    </Article>
   );
 }

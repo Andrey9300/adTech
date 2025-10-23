@@ -9,8 +9,9 @@ export const NAV_ITEMS: TNavItem[] = [
     label: "Tutorial",
     href: "/tutorial",
     children: [
-      { label: "Lesson 1", href: "/tutorial/lesson1" },
-      { label: "Lesson 2", href: "/tutorial/lesson2" },
+      { label: "Basic integration", href: "/tutorial/lesson1" },
+      { label: "Lazy loading", href: "/tutorial/lesson2" },
+      { label: "Ad loading and Refresh", href: "/tutorial/lesson3" },
     ],
   },
 ];
