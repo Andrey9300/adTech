@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Header } from "@/components/layout/header/Header";
-import { SidebarAccordion } from "@/components/layout/sidebarAccordion/SidebarAccordion";
+import { SidebarAccordion } from "@/components/layout/sidebarAccordion";
 import "../styles/globals.css";
 
 export const metadata: Metadata = {
