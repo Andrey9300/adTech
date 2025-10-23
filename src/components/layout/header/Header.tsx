@@ -1,4 +1,5 @@
-import { Github } from "lucide-react";
+import { Github, Linkedin } from "lucide-react";
+import React from "react";
 
 export function Header() {
   return (
@@ -13,9 +14,18 @@ export function Header() {
           <a
             href="https://github.com/Andrey9300/adTech"
             target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-md border border-gray-200 bg-gray-50 px-1 py-1 hover:bg-gray-100"
           >
-            <Github />
+            <Github className="w-5 h-5" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/andreylopatinyar/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-md border border-gray-200 bg-gray-50 px-1 py-1 hover:bg-gray-100"
+          >
+            <Linkedin className="w-5 h-5" />
           </a>
         </nav>
       </div>
