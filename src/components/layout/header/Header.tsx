@@ -10,7 +10,7 @@ export function Header() {
         </div>
         <nav className="ml-auto space-x-4 text-sm text-secondary">
           <a href="/about">About</a>
-          <a href="/tutorial">Tutorial</a>
+          <a href="/guides">Guides</a>
           <a
             href="https://github.com/Andrey9300/adTech"
             target="_blank"

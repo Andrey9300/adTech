@@ -5,23 +5,23 @@ import "../../styles/globals.css";
 import Footer from "@/components/layout/footer/Footer";
 
 export const metadata: Metadata = {
-  title: "Ad tech tutorial",
-  description: "Ad tech tutorial",
+  title: "Ad tech Guides",
+  description: "Ad tech Guides",
 };
 
 interface LayoutProps {
   children: React.ReactNode;
 }
 
-export default function TutorialLayout({ children }: LayoutProps) {
+export default function GuidesLayout({ children }: LayoutProps) {
   return (
     <div className="flex flex-col h-screen">
       <Header />
-      <div className="flex flex-1 overflow-hidden">
+      <div className="flex flex-1">
         <aside className="hidden md:block w-64 border-r bg-gray-50">
           <SidebarAccordion />
         </aside>
-        <main className="flex-1 overflow-y-auto p-8">{children}</main>
+        <main className="flex-1 p-8">{children}</main>
       </div>
       <Footer />
     </div>

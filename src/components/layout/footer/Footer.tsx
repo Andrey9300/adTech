@@ -23,10 +23,10 @@ export default function Footer() {
             About
           </a>
           <a
-            href="/tutorial"
+            href="/guides"
             className="hover:text-gray-900 dark:hover:text-white transition"
           >
-            Tutorial
+            Guides
           </a>
         </nav>
 
