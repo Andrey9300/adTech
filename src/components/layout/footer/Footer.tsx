@@ -1,5 +1,4 @@
-import React from "react";
-import { Github, Linkedin } from "lucide-react";
+import SocialLinks from '@/components/ui/social/SocialLinks'
 
 export default function Footer() {
   return (
@@ -31,24 +30,9 @@ export default function Footer() {
         </nav>
 
         <div className="flex items-center gap-4">
-          <a
-            href="https://github.com/Andrey9300/adTech"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition"
-          >
-            <Github className="w-5 h-5" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/andreylopatinyar/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition"
-          >
-            <Linkedin className="w-5 h-5" />
-          </a>
+          <SocialLinks />
         </div>
       </div>
     </footer>
-  );
+  )
 }

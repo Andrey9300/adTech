@@ -1,4 +1,4 @@
-import { Article } from "@/components/layout/article/Article";
+import { Article } from '@/components/layout/article/Article'
 
 export default function BasicIntegration() {
   return (
@@ -6,7 +6,11 @@ export default function BasicIntegration() {
       title="Basic integration"
       description="How to integrate GAM, amazon and prebid"
     >
-      <p>State management is one of the most important topics in React...</p>
+      <iframe
+        src="http://localhost:3000/demo/basic-integration"
+        width="100%"
+        height="500px"
+      />
     </Article>
-  );
+  )
 }

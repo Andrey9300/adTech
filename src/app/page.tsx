@@ -1,12 +1,29 @@
-import { Header } from "@/components/layout/header/Header";
-import Footer from "@/components/layout/footer/Footer";
+import Footer from '@/components/layout/footer/Footer'
+import { Header } from '@/app/main/Header'
+import { Summary } from '@/app/main/Summary'
+import { FeaturedGuides } from '@/app/main/FeaturedGuides'
+import { AboutSnippet } from '@/app/main/AboutSnippet'
 
 export default function Home() {
   return (
-    <div className="flex flex-col h-screen">
+    <div className="flex flex-col min-h-screen">
       <Header />
-      <main className="flex-grow">Home</main>
+      <div className="flex flex-1">
+        <main className="flex-1 p-6 md:p-10 overflow-y-auto">
+          <div className="max-w-5xl mx-auto">
+            <section className="py-12 md:py-20">
+              <Summary />
+            </section>
+            <section className="py-8 md:py-12 px-6">
+              <FeaturedGuides />
+            </section>
+            <section className="py-8 md:py-12 px-6">
+              <AboutSnippet />
+            </section>
+          </div>
+        </main>
+      </div>
       <Footer />
     </div>
-  );
+  )
 }

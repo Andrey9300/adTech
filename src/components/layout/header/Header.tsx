@@ -1,5 +1,4 @@
-import { Github, Linkedin } from "lucide-react";
-import React from "react";
+import { SocialLinksWhite } from '@/components/ui/social/SocialLinks'
 
 export function Header() {
   return (
@@ -11,24 +10,9 @@ export function Header() {
         <nav className="ml-auto space-x-4 text-sm text-secondary">
           <a href="/about">About</a>
           <a href="/guides">Guides</a>
-          <a
-            href="https://github.com/Andrey9300/adTech"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-md border border-gray-200 bg-gray-50 px-1 py-1 hover:bg-gray-100"
-          >
-            <Github className="w-5 h-5" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/andreylopatinyar/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-md border border-gray-200 bg-gray-50 px-1 py-1 hover:bg-gray-100"
-          >
-            <Linkedin className="w-5 h-5" />
-          </a>
+          <SocialLinksWhite />
         </nav>
       </div>
     </header>
-  );
+  )
 }
