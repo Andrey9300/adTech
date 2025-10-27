@@ -24,13 +24,6 @@ export function Summary() {
         >
           About me
         </a>
-        <a
-          href="https://leetcode.com/u/andrey93077/"
-          target="_blank"
-          className="inline-block px-4 py-2 border border-gray-200 rounded-md text-gray-700 hover:bg-gray-100 transition"
-        >
-          LeetCode
-        </a>
       </div>
     </div>
   )
