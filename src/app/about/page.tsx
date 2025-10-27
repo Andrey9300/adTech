@@ -3,7 +3,7 @@ import Link from 'next/link'
 export default function About() {
   return (
     <main className="bg-gradient-to-b from-gray-50 to-white text-gray-800 mb-8">
-      <section className="relative max-w-5xl mx-auto px-6 py-20 text-center">
+      <section className="relative max-w-5xl mx-auto px-6 py-12 text-center">
         <h1 className="text-5xl font-extrabold text-gray-900 mb-4">
           Hi, I’m Andrei 👋
         </h1>
