@@ -27,7 +27,7 @@ export function FeaturedGuides() {
         {guides.map((g) => (
           <article
             key={g.href}
-            className="bg-white border rounded-lg p-5 shadow-sm"
+            className="bg-white border border-gray-200 rounded-lg p-5 shadow-sm"
           >
             <div className="flex items-start justify-between gap-3">
               <div>

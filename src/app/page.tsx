@@ -5,6 +5,7 @@ import { FeaturedGuides } from '@/app/main/FeaturedGuides'
 import { AboutSnippet } from '@/app/main/AboutSnippet'
 import { Header } from '@/components/layout/header/Header'
 import { FeaturesArticles } from '@/app/main/FeaturesArticles'
+import { Achievements } from '@/app/main/Achievements'
 
 export default function Home() {
   return (
@@ -13,16 +14,19 @@ export default function Home() {
       <div className="flex flex-1">
         <main className="flex-1 p-6 md:p-10 overflow-y-auto">
           <div className="max-w-5xl mx-auto">
-            <section className="py-12 md:py-20">
+            <section className="py-12 md:py-4">
               <Summary />
             </section>
-            <section className="py-8 md:py-12 px-6">
+            <section className="py-8 md:py-12">
               <FeaturedGuides />
             </section>
-            <section className="mb-20">
+            <section className="py-8 md:py-12 px-6 mb-12 bg-white border border-gray-200 rounded-lg">
+              <Achievements />
+            </section>
+            <section>
               <FeaturesArticles />
             </section>
-            <section className="py-8 md:py-12 px-6">
+            <section className="py-8 md:py-12">
               <AboutSnippet />
             </section>
           </div>

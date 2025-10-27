@@ -1,7 +1,11 @@
+import Link from 'next/link'
+
 export function AboutSnippet() {
   return (
-    <div className="bg-white border rounded-lg p-6 shadow-sm">
-      <h3 className="text-xl font-semibold mb-2">About Andrei</h3>
+    <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
+      <h3 className="text-xl font-semibold mb-2">
+        <Link href="/about">About Andrei</Link>
+      </h3>
       <p className="text-gray-700">
         Senior Frontend Engineer with 10+ years building scalable cloud products
         and high-performance web apps — from cloud storage platforms to
