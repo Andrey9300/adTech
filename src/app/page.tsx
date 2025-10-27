@@ -20,11 +20,11 @@ export default function Home() {
             <section className="py-8 md:py-12">
               <FeaturedGuides />
             </section>
-            <section className="py-8 md:py-12 px-6 mb-12 bg-white border border-gray-200 rounded-lg">
-              <Achievements />
-            </section>
             <section>
               <FeaturesArticles />
+            </section>
+            <section className="py-8 md:py-12 px-6 mt-12 bg-white border border-gray-200 rounded-lg">
+              <Achievements />
             </section>
             <section className="py-8 md:py-12">
               <AboutSnippet />

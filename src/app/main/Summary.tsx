@@ -2,8 +2,8 @@ export function Summary() {
   return (
     <div className="px-6">
       <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
-        Hi, I’m Andrei — Senior Frontend Engineer focused on AdTech &
-        high-performance web apps.
+        Hi, I’m Andrei — Senior Frontend Engineer focused on high-performance
+        web apps & AdTech.
       </h1>
       <p className="mt-4 text-gray-600 max-w-2xl">
         I write practical guides about ad technologies (GAM, GPT, Prebid),

@@ -46,9 +46,7 @@ function Article({ title, description, href }: TArticle) {
 export function FeaturesArticles() {
   return (
     <>
-      <h2 className="text-2xl font-semibold text-gray-900 mb-8 text-center">
-        Featured Articles
-      </h2>
+      <h2 className="text-2xl font-semibold mb-4">Featured Articles</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {articles.map((article) => (
           <Article key={article.id} {...article} />
