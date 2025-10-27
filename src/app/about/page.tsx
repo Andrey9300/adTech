@@ -1,4 +1,5 @@
-import Link from 'next/link'
+import EmailButton from '@/components/ui/social/EmailButton'
+import LinkedInButton from '@/components/ui/social/LinkedInButton'
 
 export default function About() {
   return (
@@ -64,19 +65,8 @@ export default function About() {
           </p>
 
           <div className="flex justify-center gap-6">
-            <a
-              href="mailto:andrey93077@gmail.com"
-              className="px-6 py-3 rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 transition"
-            >
-              Contact Me
-            </a>
-            <Link
-              href="https://www.linkedin.com/in/andreylopatinyar/"
-              target="_blank"
-              className="px-6 py-3 rounded-lg border border-gray-300 text-gray-800 font-medium hover:bg-gray-100 transition"
-            >
-              LinkedIn
-            </Link>
+            <EmailButton />
+            <LinkedInButton />
           </div>
         </div>
       </section>

@@ -32,24 +32,5 @@
     "es2021": true,
     "node": true
   },
-  "rules": {
-    // --- General Style ---
-    "semi": ["error", "always"],
-    "quotes": ["error", "single", { "avoidEscape": true }],
-    "no-unused-vars": "off",
-    "@typescript-eslint/no-unused-vars": ["warn"],
-    "react/react-in-jsx-scope": "off",
-    "react/prop-types": "off",
-    "prettier/prettier": [
-      "error",
-      {
-        "endOfLine": "auto"
-      }
-    ],
-    "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn",
-    "tailwindcss/classnames-order": "warn",
-    "tailwindcss/no-custom-classname": "off"
-  },
   "ignorePatterns": ["node_modules", ".next", "out", "dist"]
 }

@@ -1,3 +1,6 @@
+import EmailButton from '@/components/ui/social/EmailButton'
+import LinkedInButton from '@/components/ui/social/LinkedInButton'
+
 export function AboutSnippet() {
   return (
     <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
@@ -11,29 +14,18 @@ export function AboutSnippet() {
         </a>
         .
       </p>
-
-      <ul className="mt-4 space-y-2 text-sm text-gray-700">
-        <li>💼 Open to remote, contract, or on-site opportunities.</li>
-        <li>🤝 Strong with TypeScript, React, Redux, and system design.</li>
-        <li>
-          📧{' '}
-          <a
-            href="mailto:andrey93077@gmail.com"
-            className="text-blue-600 hover:underline"
-          >
-            andrey93077@gmail.com
-          </a>
-        </li>
-        <li>
-          🔗{' '}
-          <a
-            href="https://www.linkedin.com/in/andreylopatinyar/"
-            className="text-blue-600 hover:underline"
-          >
-            LinkedIn
-          </a>
-        </li>
-      </ul>
+      <div>
+        <ul className="mt-4 space-y-2 text-sm text-gray-700">
+          <li>💼 Open to remote, contract, or on-site opportunities.</li>
+          <li>🤝 Strong with TypeScript, React, Redux, and system design.</li>
+        </ul>
+      </div>
+      <div className="flex pt-4 pb-4">
+        <div className="flex pr-4">
+          <EmailButton />
+        </div>
+        <LinkedInButton />
+      </div>
     </div>
   )
 }
