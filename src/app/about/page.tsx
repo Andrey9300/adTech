@@ -1,3 +1,5 @@
+import Link from 'next/link'
+import { FileText } from 'lucide-react'
 import EmailButton from '@/components/ui/social/EmailButton'
 import LinkedInButton from '@/components/ui/social/LinkedInButton'
 
@@ -58,15 +60,24 @@ export default function About() {
           </p>
         </div>
 
-        <div className="mt-12 text-center border-t pt-8">
+        <div className="text-center border-t pt-8">
           <p className="text-gray-700 mb-6">
             Always open to interesting discussions, collaborations, or new
             opportunities.
           </p>
 
-          <div className="flex justify-center gap-6">
+          <div className="flex justify-center flex-col sm:flex-row sm:items-center sm:gap-4 gap-3 mt-8 w-full">
             <EmailButton />
             <LinkedInButton />
+            <Link
+              href="https://drive.google.com/file/d/1JHcpi4fjc03lA2VRKjs7JpsOlKbcSEPc/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="justify-center inline-flex items-center gap-2 bg-blue-600 text-white px-5 py-3 rounded-lg font-medium hover:bg-blue-700 transition"
+            >
+              <FileText size={20} />
+              View Resume
+            </Link>
           </div>
         </div>
       </section>
