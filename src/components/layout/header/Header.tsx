@@ -8,7 +8,7 @@ export function Header() {
           Andrei
         </a>
         <span className="hidden md:inline text-sm text-gray-500">
-          AdTech & Performance
+          Performance & AdTech
         </span>
       </div>
       <nav className="ml-auto space-x-4 text-sm text-secondary">

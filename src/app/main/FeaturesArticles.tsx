@@ -36,7 +36,7 @@ function Article({ title, description, href }: TArticle) {
         <h3 className="text-lg font-semibold text-gray-800 mb-2">{title}</h3>
         <p className="text-gray-600 text-sm mb-4">{description}</p>
         <a href={href} className="text-blue-600 font-medium hover:underline">
-          Read more →
+          View on Medium →
         </a>
       </div>
     </article>

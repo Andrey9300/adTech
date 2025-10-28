@@ -23,7 +23,7 @@ export default function Home() {
             <section>
               <FeaturesArticles />
             </section>
-            <section className="py-8 md:py-12 px-6 mt-12 bg-white border border-gray-200 rounded-lg">
+            <section className="py-8 md:py-8 px-6 mt-12 bg-white border border-gray-200 rounded-lg">
               <Achievements />
             </section>
             <section className="py-8 md:py-12">
