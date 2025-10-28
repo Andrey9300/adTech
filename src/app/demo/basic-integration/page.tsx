@@ -1,10 +1,7 @@
 'use client'
 import { useEffect } from 'react'
 import { loadAsync } from '@/lib/loadAsync'
-
-const DFP_CODE = '/6355419/Travel/'
-const AD_UNIT = 'Europe/France/Paris'
-const BANNER_ID = 'banner-ad'
+import { DFP_ID, UNIT } from './constants/units'
 
 export default function BasicIntegration() {
   useEffect(() => {
@@ -14,15 +11,14 @@ export default function BasicIntegration() {
 
     googletag.cmd.push(() => {
       googletag
-        .defineSlot(`${DFP_CODE}${AD_UNIT}`, [300, 250], BANNER_ID)
+        .defineSlot(`${DFP_ID}${UNIT.dfpCode}`, UNIT.sizes[0], UNIT.adId)
         ?.addService(googletag.pubads())
 
-      // Enable the PubAdsService.
       googletag.enableServices()
 
-      googletag.display(BANNER_ID)
+      googletag.display(UNIT.adId)
     })
   }, [])
 
-  return <div id={BANNER_ID} style={{ width: '300px', height: '250px' }}></div>
+  return <div id={UNIT.adId} style={{ width: '300px', height: '250px' }}></div>
 }

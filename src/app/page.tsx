@@ -17,10 +17,10 @@ export default function Home() {
             <section className="py-12 md:py-4">
               <Summary />
             </section>
-            <section className="py-8 md:py-12">
+            <section className="hidden py-8 md:py-12">
               <FeaturedGuides />
             </section>
-            <section>
+            <section className="pt-8">
               <FeaturesArticles />
             </section>
             <section className="py-8 md:py-8 px-6 mt-12 bg-white border border-gray-200 rounded-lg">

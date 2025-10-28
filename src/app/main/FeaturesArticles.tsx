@@ -8,24 +8,11 @@ type TArticle = {
 const articles: TArticle[] = [
   {
     id: 1,
-    title: 'How Google Publisher Tag Works',
+    title:
+      'How Prebid.js Helps Websites Increase Ad Revenue Without Hurting User Experience',
     description:
-      'A deep dive into GPT, ad slots, and how to optimize rendering for better CPMs and viewability.',
-    href: '/guides/google-publisher-tag',
-  },
-  {
-    id: 2,
-    title: 'Prebid.js Integration with Next.js',
-    description:
-      'Step-by-step guide to integrate header bidding using Prebid and modern bundlers.',
-    href: '/guides/prebid',
-  },
-  {
-    id: 3,
-    title: 'Lazy-loading Ads Without Killing Revenue',
-    description:
-      'Strategies to lazy-load ad slots while maintaining ad viewability and revenue.',
-    href: '/guides/perf/lazy-ads',
+      'Technical optimization meets business impact. In my article, I explain how Prebid.js improved ad efficiency, user experience, and revenue — all through smart frontend architecture.',
+    href: 'https://medium.com/@andrey93077/how-prebid-js-helps-websites-increase-ad-revenue-without-hurting-user-experience-1e0c1adac0a4',
   },
 ]
 
@@ -35,7 +22,11 @@ function Article({ title, description, href }: TArticle) {
       <div className="p-6">
         <h3 className="text-lg font-semibold text-gray-800 mb-2">{title}</h3>
         <p className="text-gray-600 text-sm mb-4">{description}</p>
-        <a href={href} className="text-blue-600 font-medium hover:underline">
+        <a
+          href={href}
+          target="_blank"
+          className="text-blue-600 font-medium hover:underline"
+        >
           View on Medium →
         </a>
       </div>

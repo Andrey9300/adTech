@@ -8,7 +8,7 @@ export default function Footer() {
           © {new Date().getFullYear()} Andrei. All rights reserved.
         </p>
 
-        <nav className="flex flex-wrap justify-center gap-4 text-sm">
+        <nav className="hidden flex flex-wrap justify-center gap-4 text-sm">
           <a
             href="/"
             className="hover:text-gray-900 dark:hover:text-white transition"
