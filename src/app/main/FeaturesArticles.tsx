@@ -2,6 +2,7 @@ type TArticle = {
   id: number
   title: string
   description: string
+  imageUrl: string
   href: string
 }
 
@@ -12,25 +13,40 @@ const articles: TArticle[] = [
       'How Prebid.js Helps Websites Increase Ad Revenue Without Hurting User Experience',
     description:
       'Technical optimization meets business impact. In my article, I explain how Prebid.js improved ad efficiency, user experience, and revenue — all through smart frontend architecture.',
+    imageUrl:
+      'https://miro.medium.com/v2/resize:fit:1400/1*FUnNm_Gu7cbhL4mYVJBSrA.png',
     href: 'https://medium.com/@andrey93077/how-prebid-js-helps-websites-increase-ad-revenue-without-hurting-user-experience-1e0c1adac0a4',
   },
 ]
 
-function Article({ title, description, href }: TArticle) {
+function Article({ title, description, href, imageUrl }: TArticle) {
   return (
-    <article className="border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow bg-white">
-      <div className="p-6">
-        <h3 className="text-lg font-semibold text-gray-800 mb-2">{title}</h3>
-        <p className="text-gray-600 text-sm mb-4">{description}</p>
-        <a
-          href={href}
-          target="_blank"
-          className="text-blue-600 font-medium hover:underline"
-        >
-          View on Medium →
-        </a>
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group block rounded-xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-lg transition-all bg-white dark:bg-gray-900 dark:border-gray-800"
+    >
+      <div className="aspect-video overflow-hidden">
+        <img
+          src={imageUrl}
+          alt={title}
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+        />
       </div>
-    </article>
+
+      <div className="p-5">
+        <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100 group-hover:text-blue-600 transition-colors">
+          {title}
+        </h3>
+        <p className="text-gray-600 dark:text-gray-400 mb-4 line-clamp-3">
+          {description}
+        </p>
+        <div className="flex items-center text-blue-600 font-medium hover:underline">
+          View on Medium →
+        </div>
+      </div>
+    </a>
   )
 }
 
