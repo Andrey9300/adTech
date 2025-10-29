@@ -4,7 +4,7 @@ export default function GithubLink({ white }: { white?: boolean }) {
     : 'p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition'
   return (
     <a
-      href="https://github.com/Andrey9300/adTech"
+      href="https://github.com/Andrey9300"
       target="_blank"
       rel="noopener noreferrer"
       className={color}
