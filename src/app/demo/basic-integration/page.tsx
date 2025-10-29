@@ -11,7 +11,7 @@ export default function BasicIntegration() {
 
     googletag.cmd.push(() => {
       googletag
-        .defineSlot(`${DFP_ID}${UNIT.dfpCode}`, UNIT.sizes[0], UNIT.adId)
+        .defineSlot(`${DFP_ID}${UNIT.dfpCode}`, UNIT.sizes, UNIT.adId)
         ?.addService(googletag.pubads())
 
       googletag.enableServices()
