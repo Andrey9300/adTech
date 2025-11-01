@@ -1,4 +1,5 @@
 import { Article } from '@/components/layout/article/Article'
+import Link from 'next/link'
 
 export default function AdvancedIntegration() {
   return (
@@ -16,9 +17,7 @@ export default function AdvancedIntegration() {
           clean, production-ready example of multi-source ad monetization with
           full debugging support.
         </div>
-      </section>
 
-      <section className="mb-8 bg-white p-8 shadow-sm">
         <h3>Recommended pattern</h3>
         <ol className="list-decimal list-inside space-y-2 text-gray-700">
           <li>
@@ -41,27 +40,24 @@ export default function AdvancedIntegration() {
         </ol>
       </section>
 
-      <section className="text-center mb-8 bg-white p-8 shadow-sm">
-        <h3>Sample implementation</h3>
-        <div className="text-center">
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <a
-              href="https://github.com/Andrey9300/adTech/tree/master/src/app/demo/advanced-integration"
-              target="_blank"
-              className="bg-gradient-to-r from-indigo-500 to-blue-600 text-white px-6 py-2 rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition-transform"
-            >
-              View Source Code
-            </a>
-            <a
-              href="/demo/advanced-integration"
-              target="_blank"
-              className="bg-gradient-to-r from-green-500 to-emerald-600 text-white px-6 py-2 rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition-transform"
-            >
-              See Live Demo
-            </a>
-          </div>
-        </div>
-      </section>
+      <div className="flex flex-col sm:flex-row gap-4">
+        <Link
+          href="https://github.com/Andrey9300/adTech/tree/master/src/app/demo/advanced-integration"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="justify-center inline-flex items-center gap-2 bg-blue-600 text-white px-5 py-3 rounded-lg font-medium hover:bg-blue-700 transition"
+        >
+          Source Code
+        </Link>
+        <Link
+          href="/demo/advanced-integration"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="justify-center inline-flex items-center gap-2 bg-blue-600 text-white px-5 py-3 rounded-lg font-medium hover:bg-blue-700 transition"
+        >
+          Live Demo
+        </Link>
+      </div>
 
       <iframe src="/demo/advanced-integration" width="100%" height="300px" />
     </Article>
