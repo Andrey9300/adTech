@@ -1,13 +1,13 @@
-import type { Metadata } from "next";
-import "../../styles/globals.css";
+import type { Metadata } from 'next'
+import '../../styles/globals.css'
 
 export const metadata: Metadata = {
-  title: "Ad tech demo",
-  description: "Ad tech demo",
-};
+  title: 'Ad tech demo',
+  description: 'Ad tech demo',
+}
 
 interface LayoutProps {
-  children: React.ReactNode;
+  children: React.ReactNode
 }
 
 export default function DemoLayout({ children }: LayoutProps) {
@@ -15,5 +15,5 @@ export default function DemoLayout({ children }: LayoutProps) {
     <div>
       <main className="flex-1 overflow-y-auto p-8">{children}</main>
     </div>
-  );
+  )
 }
