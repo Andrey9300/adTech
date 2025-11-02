@@ -1,4 +1,4 @@
-import { defineApstag } from '../helpers/apstagHelper'
+import { defineApstag } from './apstagHelper'
 
 export const defineAds = () => {
   window.googletag = window.googletag || { cmd: [] }
