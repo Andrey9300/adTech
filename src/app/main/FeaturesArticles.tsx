@@ -22,7 +22,7 @@ const articles: TArticle[] = [
     title:
       'How to Integrate Google, Prebid and (Amazon) — Complete Setup Guide',
     description:
-      'Modern header bidding setups often combine Google Publisher Tag (GPT.js), Prebid.js, and Amazon Publisher Services (APS / apstag). The goal: run all demand sources in parallel, merge their bids, and send the highest value into Google Ad Manager (GAM) — without breaking latency budgets.',
+      'Modern header bidding setups often combine Google Publisher Tag (GPT.js), Prebid.js and Amazon Publisher Services (APS / apstag). The goal: run all demand sources in parallel, merge their bids, and send the highest value into Google Ad Manager (GAM) — without breaking latency budgets.',
     imageUrl:
       'https://miro.medium.com/v2/resize:fit:0/1*RrImoz9zkXerSbJ7HRPFEA.png',
     href: 'https://medium.com/@andrey93077/how-to-integrate-gpt-js-prebid-js-and-apstag-js-amazon-complete-setup-guide-dd49a7ea1164',
