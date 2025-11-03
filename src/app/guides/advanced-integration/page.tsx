@@ -1,6 +1,7 @@
 import { Article } from '@/components/layout/article/Article'
 import Link from 'next/link'
 import { ExternalLink } from 'lucide-react'
+import { ArticlePagination } from '@/components/ui/pagination/ArticlePagination'
 
 export default function AdvancedIntegration() {
   return (
@@ -67,6 +68,13 @@ export default function AdvancedIntegration() {
         <h3 className="mt-0 mb-4">Sample implementation</h3>
         <iframe src="/demo/advanced-integration" width="100%" height="300px" />
       </section>
+
+      <ArticlePagination
+        prev={{
+          link: '/guides',
+          title: 'Overview',
+        }}
+      />
     </Article>
   )
 }
