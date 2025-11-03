@@ -1,4 +1,11 @@
-export const ArticlePagination = ({ prev, next }) => {
+type TPagination = { link: string; title: string }
+
+type TArticlePagination = {
+  prev?: TPagination
+  next?: TPagination
+}
+
+export const ArticlePagination = ({ prev, next }: TArticlePagination) => {
   return (
     <div className="flex justify-between items-center my-12 px-4 py-6 bg-gray-50 rounded-2xl shadow-md">
       {prev ? (
