@@ -5,37 +5,27 @@ import { defineAds } from '../helpers/defineAds'
 import { loadAsync } from '@/lib/loadAsync'
 import { TUnit } from '../types/unit'
 
-type TConfig = {
-  isInit: boolean
-  units: TUnit[]
-}
+let isInit = false
 
-const config: TConfig = {
-  isInit: false,
-  units: [],
-}
-
-const iniAdv = (units: TUnit[]) => {
-  if (config.isInit) {
+const iniAdv = () => {
+  if (isInit) {
     return
   }
 
-  config.isInit = true
-  config.units = units
+  isInit = true
 
   defineAds()
 
   loadAsync('/vendor/prebid10.14.0.js')
   loadAsync('https://c.amazon-adsystem.com/aax2/apstag.js')
   loadAsync('https://securepubads.g.doubleclick.net/tag/js/gpt.js')
-}
 
-const advRequest = () => {
-  const { units } = config
   initApstag()
   initPrebid()
   initGpt()
+}
 
+const advRequest = (units: TUnit[]) => {
   defineGptSlot(units)
 
   Promise.all([prebidPromise(units), apstagPromise(units)]).then(() => {

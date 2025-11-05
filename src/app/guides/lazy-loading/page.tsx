@@ -6,8 +6,8 @@ import { ArticlePagination } from '@/components/ui/pagination/ArticlePagination'
 export default function LazyLoading() {
   return (
     <Article
-      title="Integrating Google, Prebid & Amazon APS"
-      description="A practical guide showing how to run prebid.js and apstag.js in parallel, synchronize targeting, and fire gpt.js"
+      title="Lazy loading for ads"
+      description="A practical guide showing how to lazy load ads and earn more money"
     >
       <section className="mb-8 bg-white p-8 shadow-sm">
         <h3 className="mt-0 mb-4">Idea</h3>
@@ -17,6 +17,10 @@ export default function LazyLoading() {
         <ol className="list-decimal list-inside space-y-2 text-gray-700">
           <li>...</li>
         </ol>
+
+        <div>Loading ads libs</div>
+        <div>Ads slot visible for 5% - make request</div>
+        {/* показать визуально шаги выше  */}
       </section>
 
       <section className="mb-8 bg-white p-8 shadow-sm w-sm">

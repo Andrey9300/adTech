@@ -8,7 +8,7 @@ const PREBID_CONFIG = {
     intercept: [
       {
         when: {
-          adUnitCode: 'test',
+          adUnitCode: 'unit_1',
         },
         then: {
           cpm: 100,

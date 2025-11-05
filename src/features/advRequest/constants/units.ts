@@ -4,8 +4,13 @@ const DFP_CODE = '/Travel/Europe/France/Paris'
 
 export const DFP_ID = '/6355419'
 
-export const UNIT: TUnit = {
-  adId: 'banner-ad',
+export const UNIT_1: TUnit = {
+  adId: 'unit_1',
+  dfpCode: DFP_CODE,
+  sizes: [[300, 250]],
+}
+export const UNIT_2: TUnit = {
+  adId: 'unit_2',
   dfpCode: DFP_CODE,
   sizes: [[300, 250]],
 }
