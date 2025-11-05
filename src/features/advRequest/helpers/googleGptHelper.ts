@@ -1,4 +1,5 @@
-import { DFP_ID, UNIT } from '../constants/units'
+import { DFP_ID } from '../constants/units'
+import { TUnit } from '@/features/advRequest/types/unit'
 
 export const initGpt = () => {
   window.googletag.cmd.push(function () {
@@ -8,10 +9,12 @@ export const initGpt = () => {
   })
 }
 
-export const defineGptSlot = () => {
+export const defineGptSlot = (units: TUnit[]) => {
   window.googletag.cmd.push(function () {
-    googletag
-      .defineSlot(`${DFP_ID}${UNIT.dfpCode}`, UNIT.sizes, UNIT.adId)
-      ?.addService(googletag.pubads())
+    units.forEach((unit) => {
+      googletag
+        .defineSlot(`${DFP_ID}${unit.dfpCode}`, unit.sizes, unit.adId)
+        ?.addService(googletag.pubads())
+    })
   })
 }

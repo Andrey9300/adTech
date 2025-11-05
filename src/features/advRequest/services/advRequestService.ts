@@ -1,18 +1,27 @@
-import { UNIT } from '../constants/units'
 import { defineGptSlot, initGpt } from '../helpers/googleGptHelper'
 import { initPrebid, prebidPromise } from '../helpers/prebidHelper'
 import { apstagPromise, initApstag } from '../helpers/apstagHelper'
 import { defineAds } from '../helpers/defineAds'
 import { loadAsync } from '@/lib/loadAsync'
+import { TUnit } from '../types/unit'
 
-let isInit = false
+type TConfig = {
+  isInit: boolean
+  units: TUnit[]
+}
 
-export const iniAdv = () => {
-  if (isInit) {
+const config: TConfig = {
+  isInit: false,
+  units: [],
+}
+
+const iniAdv = (units: TUnit[]) => {
+  if (config.isInit) {
     return
   }
 
-  isInit = true
+  config.isInit = true
+  config.units = units
 
   defineAds()
 
@@ -21,16 +30,19 @@ export const iniAdv = () => {
   loadAsync('https://securepubads.g.doubleclick.net/tag/js/gpt.js')
 }
 
-export const advRequest = () => {
+const advRequest = () => {
+  const { units } = config
   initApstag()
   initPrebid()
   initGpt()
 
-  defineGptSlot()
+  defineGptSlot(units)
 
-  Promise.all([prebidPromise, apstagPromise]).then(() => {
+  Promise.all([prebidPromise(units), apstagPromise(units)]).then(() => {
     window.googletag.cmd.push(() => {
-      window.googletag.display(UNIT.adId)
+      units.map((unit) => {
+        window.googletag.display(unit.adId)
+      })
     })
   })
 }

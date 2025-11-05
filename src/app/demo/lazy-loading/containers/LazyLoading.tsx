@@ -2,7 +2,7 @@
 import { useEffect } from 'react'
 import { advService, UNIT } from '@/features/advRequest'
 
-export const AdvancedIntegration = () => {
+export const LazyLoading = () => {
   useEffect(() => {
     advService.iniAdv([UNIT])
     advService.advRequest()
