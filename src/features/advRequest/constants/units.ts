@@ -9,10 +9,18 @@ export const UNIT_1: TUnit = {
   dfpCode: DFP_CODE,
   sizes: [[300, 250]],
 }
+
 export const UNIT_2: TUnit = {
   adId: 'unit_2',
   dfpCode: DFP_CODE,
   sizes: [[300, 250]],
+}
+
+export const UNIT_3: TUnit = {
+  adId: 'unit_3',
+  dfpCode: '/Travel',
+  sizes: [[728, 90]],
+  customTargeting: { test: 'refresh' },
 }
 
 export const getPrebidUnit = (unit: TUnit) => ({

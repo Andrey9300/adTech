@@ -25,8 +25,7 @@ export default function About() {
         </p>
 
         <p className="text-lg leading-relaxed mb-6">
-          As a <strong>digital nomad</strong> with a valid work permit, I’m open
-          to <strong>remote</strong>, <strong>contract</strong>, or{' '}
+          I’m open to <strong>remote</strong>, <strong>contract</strong>, or{' '}
           <strong>on-site</strong> opportunities. I thrive in collaborative
           environments, working closely with backend engineers, while also being
           highly effective independently. My workflow is rooted in{' '}

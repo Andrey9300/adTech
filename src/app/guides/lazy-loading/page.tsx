@@ -6,7 +6,7 @@ import { ArticlePagination } from '@/components/ui/pagination/ArticlePagination'
 export default function LazyLoading() {
   return (
     <Article
-      title="Lazy-Loading Ads, Best Practices"
+      title="Lazy-Loading Ads"
       description="Learn how to efficiently load ad units as they become visible to maximize ad performance and enhance user experience."
     >
       <section className="mb-8 bg-white p-8 shadow-sm">
@@ -110,6 +110,10 @@ export default function LazyLoading() {
         prev={{
           link: '/guides/advanced-integration',
           title: 'Advanced integration',
+        }}
+        next={{
+          link: '/guides/refresh',
+          title: 'Refresh',
         }}
       />
     </Article>
