@@ -16,11 +16,16 @@ export const LazyLoading = () => {
       advService.advRequest([UNIT_2])
     }
 
-    intersectionObserver({
-      root: document.querySelector(`#${root}`),
-      elem: document.querySelector(`#${UNIT_2.adId}`),
-      callback: loadAds,
-    })
+    const rootElem = document.querySelector(`#${root}`)
+    const bannerElem = document.querySelector(`#${UNIT_2.adId}`)
+
+    if (rootElem && bannerElem) {
+      intersectionObserver({
+        root: rootElem,
+        elem: bannerElem,
+        callback: loadAds,
+      })
+    }
   }, [])
 
   return (
