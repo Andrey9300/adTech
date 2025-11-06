@@ -12,15 +12,15 @@ export function Summary() {
       </p>
 
       <div className="mt-6 flex flex-wrap gap-3">
-        {/*<a*/}
-        {/*  href="/guides"*/}
-        {/*  className="inline-block px-4 py-2 bg-blue-600 text-white rounded-md shadow-sm hover:bg-blue-700 transition"*/}
-        {/*>*/}
-        {/*  Read Guides*/}
-        {/*</a>*/}
+        <a
+          href="/guides"
+          className="inline-block px-4 py-2 bg-blue-600 text-white rounded-md shadow-sm hover:bg-blue-700 transition"
+        >
+          Read Guides
+        </a>
         <a
           href="/about"
-          className="inline-block px-4 py-2 bg-blue-600 text-white rounded-md shadow-sm hover:bg-blue-700 transition"
+          className="px-4 py-2 rounded-lg border border-gray-300 text-gray-800 font-medium hover:bg-gray-100 transition"
         >
           About me
         </a>
