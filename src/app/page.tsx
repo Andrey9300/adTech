@@ -18,7 +18,7 @@ export default function Home() {
             <section className="py-12 md:py-4">
               <Summary />
             </section>
-            <section className="hidden py-8 md:py-12">
+            <section className="py-8 md:py-12">
               <FeaturedGuides />
             </section>
             <section className="pt-8">
