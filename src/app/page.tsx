@@ -1,11 +1,12 @@
 import Footer from '@/components/layout/footer/Footer'
-
-import { Summary } from '@/app/main/Summary'
-import { FeaturedGuides } from '@/app/main/FeaturedGuides'
-import { AboutSnippet } from '@/app/main/AboutSnippet'
 import { Header } from '@/components/layout/header/Header'
-import { FeaturesArticles } from '@/app/main/FeaturesArticles'
-import { Achievements } from '@/app/main/Achievements'
+import {
+  Summary,
+  FeaturedGuides,
+  AboutSnippet,
+  FeaturesArticles,
+  Achievements,
+} from '@/app/main'
 
 export default function Home() {
   return (
