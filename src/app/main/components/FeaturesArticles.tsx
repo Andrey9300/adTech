@@ -42,7 +42,7 @@ export function FeaturesArticles() {
     <>
       <h2 className="text-2xl font-semibold mb-4">Featured Articles</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {ARTICLES.map((article) => (
+        {ARTICLES.sort((a, b) => b.id - a.id).map((article) => (
           <Article key={article.id} {...article} />
         ))}
       </div>

@@ -19,4 +19,12 @@ export const ARTICLES: TArticle[] = [
     imageUrl: '/images/gptjs_prebid_amazon.webp',
     href: 'https://medium.com/@andrey93077/how-to-integrate-gpt-js-prebid-js-and-apstag-js-amazon-complete-setup-guide-dd49a7ea1164',
   },
+  {
+    id: 3,
+    title: 'GDPR and Advertising: A Deep Dive Into Doing It the Right Way',
+    description:
+      'A deep dive into implementing website advertising in full GDPR compliance — from understanding consent requirements to integrating CMPs, blocking ad scripts.',
+    imageUrl: '/images/gdpr_consent_adv.webp',
+    href: 'https://medium.com/@andrey93077/gdpr-and-advertising-a-deep-dive-into-doing-it-the-right-way-629e8e375b44',
+  },
 ]
