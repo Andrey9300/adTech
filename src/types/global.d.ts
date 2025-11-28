@@ -5,5 +5,6 @@ declare global {
     googletag: googletag
     pbjs: any
     apstag: any
+    dataLayer: any
   }
 }
