@@ -1,16 +1,16 @@
-import type { Metadata } from "next";
-import { Header } from "@/components/layout/header/Header";
-import { SidebarAccordion } from "@/components/layout/sidebarAccordion";
-import "../../styles/globals.css";
-import Footer from "@/components/layout/footer/Footer";
+import type { Metadata } from 'next'
+import { Header } from '@/components/layout/header/Header'
+import { SidebarAccordion } from '@/components/layout/sidebarAccordion'
+import '../../styles/globals.css'
+import Footer from '@/components/layout/footer/Footer'
 
 export const metadata: Metadata = {
-  title: "Ad tech Guides",
-  description: "Ad tech Guides",
-};
+  title: 'Ad tech Guides',
+  description: 'Ad tech Guides',
+}
 
 interface LayoutProps {
-  children: React.ReactNode;
+  children: React.ReactNode
 }
 
 export default function GuidesLayout({ children }: LayoutProps) {
@@ -25,5 +25,5 @@ export default function GuidesLayout({ children }: LayoutProps) {
       </div>
       <Footer />
     </div>
-  );
+  )
 }

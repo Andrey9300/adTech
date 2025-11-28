@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react'
 
 type ArticleProps = {
-  title: string;
-  description?: string;
-  date?: string;
-  children: React.ReactNode;
-};
+  title: string
+  description?: string
+  date?: string
+  children: React.ReactNode
+}
 
 export const Article = ({
   title,
@@ -35,12 +35,12 @@ export const Article = ({
 
       <div className="prose prose-gray max-w-none">{children}</div>
     </article>
-  );
-};
+  )
+}
 
 const formatDate = (date: string) =>
-  new Date(date).toLocaleDateString("en-US", {
-    month: "short",
-    day: "numeric",
-    year: "numeric",
-  });
+  new Date(date).toLocaleDateString('en-US', {
+    month: 'short',
+    day: 'numeric',
+    year: 'numeric',
+  })

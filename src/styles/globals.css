@@ -1,2 +1,2 @@
-@import "../../node_modules/tailwindcss";
+@import '../../node_modules/tailwindcss';
 @plugin "@tailwindcss/typography";
