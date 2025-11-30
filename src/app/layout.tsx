@@ -36,10 +36,6 @@ export default function RootLayout({ children }: LayoutProps) {
       <body className="min-h-screen flex flex-col bg-gray-50 text-gray-900">
         {children}
       </body>
-      <Script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-MXV3H81NJS"
-      ></Script>
       <Analytics />
     </html>
   )
