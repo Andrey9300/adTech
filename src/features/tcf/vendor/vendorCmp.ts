@@ -2,12 +2,12 @@
 export const vendorCmp = () => {
   let uspTriesLimit = 3
   let uspTries = 0
-  let uspInterval
+  let uspInterval: any
 
   function makeStub() {
-    let TCF_LOCATOR_NAME = '__tcfapiLocator'
+    const TCF_LOCATOR_NAME: any = '__tcfapiLocator'
     let queue: any[] = []
-    let win = window
+    let win: any = window
     let cmpFrame
 
     function addFrame() {
@@ -59,9 +59,9 @@ export const vendorCmp = () => {
       }
     }
 
-    function postMessageEventHandler(event) {
+    function postMessageEventHandler(event: any) {
       let msgIsString = typeof event.data === 'string'
-      let json = {}
+      let json: any = {}
 
       try {
         if (msgIsString) {
@@ -77,8 +77,8 @@ export const vendorCmp = () => {
         window.__tcfapi(
           payload.command,
           payload.version,
-          function (retValue, success) {
-            let returnMsg = {
+          function (retValue: any, success: any) {
+            let returnMsg: any = {
               __tcfapiReturn: {
                 returnValue: retValue,
                 success: success,
@@ -132,6 +132,7 @@ export const vendorCmp = () => {
       '12:usctv1',
     ]
 
+    // @ts-ignore
     window.__gpp_addFrame = function (n) {
       if (!window.frames[n]) {
         if (document.body) {
@@ -140,20 +141,26 @@ export const vendorCmp = () => {
           i.name = n
           document.body.appendChild(i)
         } else {
+          // @ts-ignore
           window.setTimeout(window.__gpp_addFrame, 10, n)
         }
       }
     }
+    // @ts-ignore
     window.__gpp_stub = function () {
       let b = arguments
+      // @ts-ignore
       __gpp.queue = __gpp.queue || []
+      // @ts-ignore
       __gpp.events = __gpp.events || []
 
       if (!b.length || (b.length == 1 && b[0] == 'queue')) {
+        // @ts-ignore
         return __gpp.queue
       }
 
       if (b.length == 1 && b[0] == 'events') {
+        // @ts-ignore
         return __gpp.events
       }
 
@@ -177,11 +184,16 @@ export const vendorCmp = () => {
           true
         )
       } else if (cmd === 'addEventListener') {
+        // @ts-ignore
         if (!('lastId' in __gpp)) {
+          // @ts-ignore
           __gpp.lastId = 0
         }
+        // @ts-ignore
         __gpp.lastId++
+        // @ts-ignore
         let lnr = __gpp.lastId
+        // @ts-ignore
         __gpp.events.push({
           id: lnr,
           callback: clb,
@@ -209,8 +221,11 @@ export const vendorCmp = () => {
         )
       } else if (cmd === 'removeEventListener') {
         let success = false
+        // @ts-ignore
         for (let i = 0; i < __gpp.events.length; i++) {
+          // @ts-ignore
           if (__gpp.events[i].id == par) {
+            // @ts-ignore
             __gpp.events.splice(i, 1)
             success = true
             break
@@ -243,9 +258,11 @@ export const vendorCmp = () => {
       }
       //queue all other commands
       else {
+        // @ts-ignore
         __gpp.queue.push([].slice.apply(b))
       }
     }
+    // @ts-ignore
     window.__gpp_msghandler = function (event) {
       let msgIsString = typeof event.data === 'string'
       try {
@@ -253,12 +270,15 @@ export const vendorCmp = () => {
       } catch (e) {
         let json = null
       }
+      // @ts-ignore
       if (typeof json === 'object' && json !== null && '__gppCall' in json) {
+        // @ts-ignore
         let i = json.__gppCall
+        // @ts-ignore
         window.__gpp(
           i.command,
-          function (retValue, success) {
-            let returnMsg = {
+          function (retValue: any, success: any) {
+            let returnMsg: any = {
               __gppReturn: {
                 returnValue: retValue,
                 success: success,
@@ -276,8 +296,11 @@ export const vendorCmp = () => {
       }
     }
     if (!('__gpp' in window) || typeof window.__gpp !== 'function') {
+      // @ts-ignore
       window.__gpp = window.__gpp_stub
+      // @ts-ignore
       window.addEventListener('message', window.__gpp_msghandler, false)
+      // @ts-ignore
       window.__gpp_addFrame('__gppLocator')
     }
   }
@@ -286,9 +309,12 @@ export const vendorCmp = () => {
 
   let uspStubFunction = function () {
     let arg = arguments
+    // @ts-ignore
     if (typeof window.__uspapi !== uspStubFunction) {
       setTimeout(function () {
+        // @ts-ignore
         if (typeof window.__uspapi !== 'undefined') {
+          // @ts-ignore
           window.__uspapi.apply(window.__uspapi, arg)
         }
       }, 500)
@@ -297,14 +323,16 @@ export const vendorCmp = () => {
 
   let checkIfUspIsReady = function () {
     uspTries++
+    // @ts-ignore
     if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
       console.warn('USP is not accessible')
     } else {
       clearInterval(uspInterval)
     }
   }
-
+  // @ts-ignore
   if (typeof window.__uspapi === 'undefined') {
+    // @ts-ignore
     window.__uspapi = uspStubFunction
     uspInterval = setInterval(checkIfUspIsReady, 6000)
   }
