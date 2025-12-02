@@ -83,6 +83,10 @@ export default function Refresh() {
           link: '/guides/lazy-loading',
           title: 'Lazy loading',
         }}
+        next={{
+          link: '/guides/gdpr',
+          title: 'GDPR and privacy settings',
+        }}
       />
     </Article>
   )

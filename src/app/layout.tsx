@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import Script from 'next/script'
 import '../styles/globals.css'
 import { Analytics } from '@/components/layout/ga/Analytics'
 

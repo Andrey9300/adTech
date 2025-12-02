@@ -6,5 +6,6 @@ declare global {
     pbjs: any
     apstag: any
     dataLayer: any
+    __tcfapi: any
   }
 }
