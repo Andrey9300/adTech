@@ -18,7 +18,7 @@ export default function Overview() {
         </p>
         <p>The main goals of this project are to:</p>
 
-        <ol className="list-decimal list-inside space-y-2 text-gray-700">
+        <ol>
           <li>
             Show how to make ad requests correctly: Learn how to initialize ad
             slots, request ads asynchronously, and ensure proper targeting using

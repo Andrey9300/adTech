@@ -1,7 +1,6 @@
 import { Article } from '@/components/layout/article/Article'
-import Link from 'next/link'
-import { ExternalLink } from 'lucide-react'
 import { ArticlePagination } from '@/components/ui/pagination/ArticlePagination'
+import { SourceCode } from '@/components/ui/sourceCode/SourceCode'
 
 export default function LazyLoading() {
   return (
@@ -79,27 +78,7 @@ export default function LazyLoading() {
         </ol>
       </section>
 
-      <section className="mb-8 bg-white p-8 shadow-sm w-sm">
-        <div className="flex flex-col justify-center sm:flex-row gap-4">
-          <Link
-            href="https://github.com/Andrey9300/adTech/tree/master/src/app/demo/lazy-loading"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="justify-center inline-flex items-center no-underline gap-2 bg-blue-600 text-white px-5 py-3 rounded-lg font-medium hover:bg-blue-700 transition"
-          >
-            Source Code
-          </Link>
-          <Link
-            href="/demo/lazy-loading"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="justify-center inline-flex items-center no-underline gap-2 bg-blue-600 text-white px-5 py-3 rounded-lg font-medium hover:bg-blue-700 transition"
-          >
-            Live Demo
-            <ExternalLink size={20} />
-          </Link>
-        </div>
-      </section>
+      <SourceCode githubUrl="lazy-loading" demoUrl="lazy-loading" />
 
       <section className="pt-8 bg-white p-6 shadow-sm">
         <h3 className="mt-0 mb-4">Sample implementation</h3>
