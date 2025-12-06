@@ -13,9 +13,7 @@ export function Header() {
       </div>
       <nav className="ml-auto space-x-4 text-sm text-secondary">
         <a href="/about">About</a>
-        <a href="/guides" className="hidden">
-          Guides
-        </a>
+        <a href="/guides">Guides</a>
         <SocialLinksWhite />
       </nav>
     </header>

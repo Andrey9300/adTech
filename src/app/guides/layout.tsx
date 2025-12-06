@@ -18,7 +18,7 @@ export default function GuidesLayout({ children }: LayoutProps) {
     <div className="flex flex-col h-screen">
       <Header />
       <div className="flex flex-1">
-        <aside className="hidden md:block w-64 border-r bg-gray-50">
+        <aside className="md:block w-64 border-r bg-gray-50">
           <SidebarAccordion />
         </aside>
         <main className="flex-1 p-8">{children}</main>
