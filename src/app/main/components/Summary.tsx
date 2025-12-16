@@ -24,6 +24,13 @@ export function Summary() {
         >
           About me
         </a>
+        <a
+          href="https://medium.com/@andrey93077"
+          className="px-4 py-2 rounded-lg border border-gray-300 text-gray-800 font-medium hover:bg-gray-100 transition"
+          target="_blank"
+        >
+          Articles
+        </a>
       </div>
     </div>
   )

@@ -27,6 +27,13 @@ export default function Footer() {
           >
             Guides
           </a>
+          <a
+            href="https://medium.com/@andrey93077"
+            className="hover:text-gray-900 dark:hover:text-white transition"
+            target="_blank"
+          >
+            Articles
+          </a>
         </nav>
 
         <div className="flex items-center gap-4">

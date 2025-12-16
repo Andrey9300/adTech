@@ -14,6 +14,9 @@ export function Header() {
       <nav className="ml-auto space-x-4 text-sm text-secondary">
         <a href="/about">About</a>
         <a href="/guides">Guides</a>
+        <a href="https://medium.com/@andrey93077" target="_blank">
+          Articles
+        </a>
         <SocialLinksWhite />
       </nav>
     </header>
