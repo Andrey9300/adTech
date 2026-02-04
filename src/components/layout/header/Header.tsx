@@ -6,9 +6,7 @@ export function Header() {
       <div className="flex items-center gap-4">
         <a href="/" className="text-lg font-semibold">
           Andrei
-          <span className="md:inline text-sm pl-2 text-gray-500">
-            Frontend & AdTech
-          </span>
+          <span className="md:inline text-sm pl-2 text-gray-500">Frontend</span>
         </a>
       </div>
       <nav className="ml-auto space-x-4 text-sm text-secondary">
