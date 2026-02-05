@@ -46,6 +46,16 @@ export function Achievements() {
           <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
             <li>
               <Link
+                href="https://www.hackerrank.com/certificates/7ca1f9e863bf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <strong>Frontend Developer (React)</strong>
+              </Link>{' '}
+              – HackerRank (2026)
+            </li>{' '}
+            <li>
+              <Link
                 href="https://www.hackerrank.com/certificates/27cecf73c8be"
                 target="_blank"
                 rel="noopener noreferrer"
