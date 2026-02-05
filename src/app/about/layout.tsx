@@ -4,8 +4,8 @@ import '../../styles/globals.css'
 import Footer from '@/components/layout/footer/Footer'
 
 export const metadata: Metadata = {
-  title: 'Ad tech guides',
-  description: 'Ad tech guides',
+  title: 'About Andrei',
+  description: 'About Andrei Lopatin, Senior Frontend Developer, Engineer',
 }
 
 interface LayoutProps {

@@ -3,8 +3,8 @@ import '../styles/globals.css'
 import { Analytics } from '@/components/layout/ga/Analytics'
 
 export const metadata: Metadata = {
-  title: 'Ad tech',
-  description: 'Ad tech',
+  title: 'Andrei Lopatin',
+  description: 'Andrei Lopatin, Senior Frontend Developer, Engineer',
 }
 
 interface LayoutProps {
