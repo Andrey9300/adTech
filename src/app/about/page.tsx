@@ -69,7 +69,7 @@ export default function About() {
             <EmailButton />
             <LinkedInButton />
             <Link
-              href="https://drive.google.com/file/d/1JHcpi4fjc03lA2VRKjs7JpsOlKbcSEPc/view?usp=sharing"
+              href="/files/CV_Andrei_Lopatin_Senior_Frontend_Developer.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="justify-center inline-flex items-center gap-2 bg-blue-600 text-white px-5 py-3 rounded-lg font-medium hover:bg-blue-700 transition"
