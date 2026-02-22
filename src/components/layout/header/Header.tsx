@@ -3,7 +3,7 @@ import { SocialLinksWhite } from '@/components/ui/social/SocialLinks'
 export function Header() {
   return (
     <header className="sticky top-0 z-40 border-b bg-white px-6 py-4 flex items-center justify-between">
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-4 mr-8">
         <a href="/" className="text-lg font-semibold">
           Andrei
           <span className="md:inline text-sm pl-2 text-gray-500">Frontend</span>

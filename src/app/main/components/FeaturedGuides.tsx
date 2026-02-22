@@ -4,6 +4,12 @@ export function FeaturedGuides() {
   return (
     <>
       <h2 className="text-2xl font-semibold mb-4">Featured Guides</h2>
+      <p className="mt-4 text-gray-600 max-w-2xl mb-6">
+        I write practical guides about ad technologies (GAM, GPT, Prebid),
+        performance optimization, and frontend architecture using React and
+        Next.js.
+      </p>
+
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {GUIDES.map((g) => (
           <article

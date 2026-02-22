@@ -5,12 +5,16 @@ export function Summary() {
         Hi, I’m Andrei — Senior Frontend Engineer focused on high-performance
         web apps.
       </h1>
-      <p className="mt-4 text-gray-600 max-w-2xl">
-        I write practical guides about ad technologies (GAM, GPT, Prebid),
-        performance optimization, and frontend architecture using React and
-        Next.js.
+      <p className="mt-4 text-gray-600">
+        Building scalable cloud-based products and designing high-performance
+        web apps, such as cloud storage or online cinema.
       </p>
-
+      <p className="mt-4 text-gray-600">
+        Specialize in performance, monetization, and scalable React/TypeScript
+        architectures. My work focuses on revenue-critical systems — optimizing
+        ad delivery, improving load speed, and designing frontend architectures
+        that directly impact business metrics.
+      </p>
       <div className="mt-6 flex flex-wrap gap-3">
         <a
           href="/about"

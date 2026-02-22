@@ -15,19 +15,19 @@ export default function Home() {
       <div className="flex flex-1">
         <main className="flex-1 p-6 md:p-10 overflow-y-auto">
           <div className="max-w-5xl mx-auto">
-            <section className="py-12 md:py-4">
+            <section>
               <Summary />
             </section>
-            <section className="pt-8">
+            <section className="pt-12">
               <FeaturesArticles />
             </section>
-            <section className="py-8 md:py-12">
+            <section className="pt-12">
               <FeaturedGuides />
             </section>
-            <section className="py-8 md:py-8 px-6 mt-12 bg-white border border-gray-200 rounded-lg">
+            <section className="mt-12 bg-white border border-gray-200 rounded-lg">
               <Achievements />
             </section>
-            <section className="py-8 md:py-12">
+            <section className="pt-12">
               <AboutSnippet />
             </section>
           </div>

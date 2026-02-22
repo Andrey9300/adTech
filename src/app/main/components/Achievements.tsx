@@ -4,7 +4,7 @@ import { ExternalLink, ShieldCheck } from 'lucide-react'
 
 export function Achievements() {
   return (
-    <div className="max-w-5xl mx-auto px-6 pb-4">
+    <div className="max-w-5xl mx-auto px-6 p-8">
       <h2 className="text-3xl font-bold mb-8 text-gray-900">🏆 Achievements</h2>
 
       <div className="grid md:grid-cols-2 gap-8">
